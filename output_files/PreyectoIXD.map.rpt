@@ -1,0 +1,605 @@
+Analysis & Synthesis report for PreyectoIXD
+Wed Jul 15 20:32:15 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: FETCH:fetch|MULTIPLEXER:muxp
+ 10. Parameter Settings for User Entity Instance: DECO:deco|MULTIPLEXER:Mm2
+ 11. Parameter Settings for User Entity Instance: EXE:exe|MULTIPLEXER:muxp3
+ 12. Parameter Settings for User Entity Instance: MEM:mem|ROM:romp|ROM_F2:RI1
+ 13. Parameter Settings for User Entity Instance: MEM:mem|ROM:romp|ROM_F2:RI2
+ 14. Parameter Settings for User Entity Instance: MEM:mem|MULTIPLEXER:muxp5
+ 15. Parameter Settings for User Entity Instance: WB:wbp|MULTIPLEXER:Mm1
+ 16. Port Connectivity Checks: "MEM:mem|ROM:romp|ROM_F2:RI2"
+ 17. Port Connectivity Checks: "MEM:mem|ROM:romp|ROM_F2:RI1"
+ 18. Port Connectivity Checks: "MEM:mem|ROM:romp"
+ 19. Port Connectivity Checks: "DECO:deco"
+ 20. Port Connectivity Checks: "FETCH:fetch|ADD:adderpc"
+ 21. Port Connectivity Checks: "FETCH:fetch|MULTIPLEXER:muxp"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Jul 15 20:32:15 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; PreyectoIXD                                 ;
+; Top-level Entity Name           ; TOP                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 2                                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; TOP                ; PreyectoIXD        ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; ADD.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv            ;         ;
+; SUB.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SUB.sv            ;         ;
+; MUL.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv            ;         ;
+; LSR.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/LSR.sv            ;         ;
+; MUXALU.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv         ;         ;
+; TOPALU.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv         ;         ;
+; UNIDAD_CONTROL.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv ;         ;
+; REGFETCH.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv       ;         ;
+; REGMEMORY.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv      ;         ;
+; REGDECO.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv        ;         ;
+; REGEXE.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGEXE.sv         ;         ;
+; REGMEM.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv         ;         ;
+; SIGNEXTEND.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SIGNEXTEND.sv     ;         ;
+; SHL.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv            ;         ;
+; IMEM.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv           ;         ;
+; COMPARATOR.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv     ;         ;
+; ROM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv            ;         ;
+; REGPCD.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv         ;         ;
+; DMEM.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv           ;         ;
+; FETCH.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv          ;         ;
+; DECO.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv           ;         ;
+; EXE.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/EXE.sv            ;         ;
+; DECODER.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv        ;         ;
+; MEM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv            ;         ;
+; WB.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/WB.sv             ;         ;
+; TOP.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv            ;         ;
+; MULTIPLEXER.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv    ;         ;
+; ROM_F2.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM_F2.sv         ;         ;
+; compilado.dat                    ; yes             ; Auto-Found Unspecified File  ; C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/compilado.dat     ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |TOP                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |TOP                ; TOP         ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FETCH:fetch|MULTIPLEXER:muxp ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DECO:deco|MULTIPLEXER:Mm2 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|MULTIPLEXER:muxp3 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEM:mem|ROM:romp|ROM_F2:RI1 ;
++----------------+-----------+---------------------------------------------+
+; Parameter Name ; Value     ; Type                                        ;
++----------------+-----------+---------------------------------------------+
+; file           ; image.txt ; String                                      ;
++----------------+-----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEM:mem|ROM:romp|ROM_F2:RI2 ;
++----------------+-----------+---------------------------------------------+
+; Parameter Name ; Value     ; Type                                        ;
++----------------+-----------+---------------------------------------------+
+; file           ; image.txt ; String                                      ;
++----------------+-----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEM:mem|MULTIPLEXER:muxp5 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WB:wbp|MULTIPLEXER:Mm1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MEM:mem|ROM:romp|ROM_F2:RI2"                                                                                              ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                   ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; data ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (8 bits) it drives; bit(s) "data[15..8]" have no fanouts ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MEM:mem|ROM:romp|ROM_F2:RI1"                                                                                              ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                   ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; data ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (8 bits) it drives; bit(s) "data[15..8]" have no fanouts ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MEM:mem|ROM:romp"                                                                                                                                                        ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d1   ; Output ; Warning  ; Output or bidir port (16 bits) is smaller than the port expression (32 bits) it drives.  The 16 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DECO:deco"                                                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; RD   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "FETCH:fetch|ADD:adderpc" ;
++------------+-------+----------+---------------------+
+; Port       ; Type  ; Severity ; Details             ;
++------------+-------+----------+---------------------+
+; Opb[31..3] ; Input ; Info     ; Stuck at GND        ;
+; Opb[1..0]  ; Input ; Info     ; Stuck at GND        ;
+; Opb[2]     ; Input ; Info     ; Stuck at VCC        ;
++------------+-------+----------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FETCH:fetch|MULTIPLEXER:muxp"                                                              ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; out[31..20] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Jul 15 20:31:44 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PreyectoIXD -c PreyectoIXD
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file add.sv
+    Info (12023): Found entity 1: ADD File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sub.sv
+    Info (12023): Found entity 1: SUB File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SUB.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mul.sv
+    Info (12023): Found entity 1: MUL File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lsr.sv
+    Info (12023): Found entity 1: LSR File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/LSR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file muxalu.sv
+    Info (12023): Found entity 1: MUXALU File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file topalu.sv
+    Info (12023): Found entity 1: TOPALU File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file unidad_control.sv
+    Info (12023): Found entity 1: UNIDAD_CONTROL File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfetch.sv
+    Info (12023): Found entity 1: REGFETCH File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regmemory.sv
+    Info (12023): Found entity 1: REGMEMORY File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regdeco.sv
+    Info (12023): Found entity 1: REGDECO File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regexe.sv
+    Info (12023): Found entity 1: REGEXE File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGEXE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regmem.sv
+    Info (12023): Found entity 1: REGMEM File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file signextend.sv
+    Info (12023): Found entity 1: SIGNEXTEND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SIGNEXTEND.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shl.sv
+    Info (12023): Found entity 1: SHL File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
+    Info (12023): Found entity 1: IMEM File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
+    Info (12023): Found entity 1: COMPARATOR File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rom.sv
+    Info (12023): Found entity 1: ROM File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regpcd.sv
+    Info (12023): Found entity 1: REGPCD File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
+    Info (12023): Found entity 1: DMEM File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fetch.sv
+    Info (12023): Found entity 1: FETCH File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file deco.sv
+    Info (12023): Found entity 1: DECO File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file exe.sv
+    Info (12023): Found entity 1: EXE File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/EXE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: DECODER File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mem.sv
+    Info (12023): Found entity 1: MEM File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file wb.sv
+    Info (12023): Found entity 1: WB File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/WB.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top.sv
+    Info (12023): Found entity 1: TOP File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplexer.sv
+    Info (12023): Found entity 1: MULTIPLEXER File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/testbench.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_romimage.sv
+    Info (12023): Found entity 1: tb_ROMSimulation File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file romimage.v
+    Info (12023): Found entity 1: RomImage File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage.v Line: 39
+Info (12021): Found 0 design units, including 0 entities, in source file rom_f.v
+Info (12021): Found 1 design units, including 1 entities, in source file rom_f2.sv
+    Info (12023): Found entity 1: ROM_F2 File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM_F2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_regmemory.sv
+    Info (12023): Found entity 1: tb_regmemory File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_regmemory.sv Line: 3
+Warning (12018): Entity "AND2" will be ignored because it conflicts with Quartus Prime primitive name File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and2.sv
+Info (12021): Found 1 design units, including 1 entities, in source file tb_alu.sv
+    Info (12023): Found entity 1: tb_alu File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_alu.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_fetch.sv
+    Info (12023): Found entity 1: tb_fetch File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_fetch.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_deco.sv
+    Info (12023): Found entity 1: tb_deco File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_exe.sv
+    Info (12023): Found entity 1: tb_exe File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_mem.sv
+    Info (12023): Found entity 1: tb_mem File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv Line: 2
+Info (12127): Elaborating entity "TOP" for the top level hierarchy
+Info (12128): Elaborating entity "FETCH" for hierarchy "FETCH:fetch" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 13
+Info (12128): Elaborating entity "REGPCD" for hierarchy "FETCH:fetch|REGPCD:regpcdp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv Line: 5
+Info (12128): Elaborating entity "ADD" for hierarchy "FETCH:fetch|ADD:adderp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv Line: 6
+Info (12128): Elaborating entity "MULTIPLEXER" for hierarchy "FETCH:fetch|MULTIPLEXER:muxp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv Line: 7
+Info (12128): Elaborating entity "IMEM" for hierarchy "FETCH:fetch|IMEM:imemp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv Line: 9
+Warning (10850): Verilog HDL warning at IMEM.sv(7): number of words (1) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv Line: 7
+Warning (10030): Net "ram.data_a" at IMEM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv Line: 4
+Warning (10030): Net "ram.waddr_a" at IMEM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv Line: 4
+Warning (10030): Net "ram.we_a" at IMEM.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv Line: 4
+Info (12128): Elaborating entity "REGFETCH" for hierarchy "REGFETCH:rfetch" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 15
+Info (12128): Elaborating entity "UNIDAD_CONTROL" for hierarchy "UNIDAD_CONTROL:controlp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 19
+Warning (10059): Verilog HDL Case Statement warning at UNIDAD_CONTROL.sv(17): case item expression never matches the case expression because it contains an 'x' or 'z' value File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv Line: 17
+Warning (10059): Verilog HDL Case Statement warning at UNIDAD_CONTROL.sv(18): case item expression never matches the case expression because it contains an 'x' or 'z' value File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv Line: 18
+Warning (10059): Verilog HDL Case Statement warning at UNIDAD_CONTROL.sv(19): case item expression never matches the case expression because it contains an 'x' or 'z' value File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv Line: 19
+Warning (10059): Verilog HDL Case Statement warning at UNIDAD_CONTROL.sv(20): case item expression never matches the case expression because it contains an 'x' or 'z' value File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv Line: 20
+Info (12128): Elaborating entity "DECO" for hierarchy "DECO:deco" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 22
+Info (12128): Elaborating entity "SIGNEXTEND" for hierarchy "DECO:deco|SIGNEXTEND:sep" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv Line: 11
+Info (12128): Elaborating entity "SHL" for hierarchy "DECO:deco|SHL:shlp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv Line: 12
+Info (12128): Elaborating entity "MULTIPLEXER" for hierarchy "DECO:deco|MULTIPLEXER:Mm2" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv Line: 13
+Info (12128): Elaborating entity "REGMEMORY" for hierarchy "DECO:deco|REGMEMORY:rmp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv Line: 14
+Info (12128): Elaborating entity "COMPARATOR" for hierarchy "DECO:deco|COMPARATOR:cmpp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv Line: 18
+Info (12128): Elaborating entity "REGDECO" for hierarchy "REGDECO:rdeco" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 25
+Info (12128): Elaborating entity "EXE" for hierarchy "EXE:exe" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 28
+Info (12128): Elaborating entity "TOPALU" for hierarchy "EXE:exe|TOPALU:alup" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/EXE.sv Line: 9
+Info (12128): Elaborating entity "MUL" for hierarchy "EXE:exe|TOPALU:alup|MUL:MULp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv Line: 7
+Info (12128): Elaborating entity "LSR" for hierarchy "EXE:exe|TOPALU:alup|LSR:LSRp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv Line: 8
+Info (12128): Elaborating entity "SUB" for hierarchy "EXE:exe|TOPALU:alup|SUB:SUBp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv Line: 9
+Info (12128): Elaborating entity "MUXALU" for hierarchy "EXE:exe|TOPALU:alup|MUXALU:MUXp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv Line: 10
+Info (12128): Elaborating entity "REGEXE" for hierarchy "REGEXE:rexe" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 31
+Warning (10230): Verilog HDL assignment warning at REGEXE.sv(9): truncated value with size 32 to match size of target (1) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGEXE.sv Line: 9
+Info (12128): Elaborating entity "MEM" for hierarchy "MEM:mem" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 33
+Info (12128): Elaborating entity "DECODER" for hierarchy "MEM:mem|DECODER:decp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 8
+Warning (10240): Verilog HDL Always Construct warning at DECODER.sv(5): inferring latch(es) for variable "En2", which holds its previous value in one or more paths through the always construct File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv Line: 5
+Warning (10240): Verilog HDL Always Construct warning at DECODER.sv(5): inferring latch(es) for variable "En1", which holds its previous value in one or more paths through the always construct File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv Line: 5
+Info (10041): Inferred latch for "En1" at DECODER.sv(5) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv Line: 5
+Info (10041): Inferred latch for "En2" at DECODER.sv(5) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv Line: 5
+Info (12128): Elaborating entity "ROM" for hierarchy "MEM:mem|ROM:romp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 9
+Warning (10240): Verilog HDL Always Construct warning at ROM.sv(12): inferring latch(es) for variable "d1", which holds its previous value in one or more paths through the always construct File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[0]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[1]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[2]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[3]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[4]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[5]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[6]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[7]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[8]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[9]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[10]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[11]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[12]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[13]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[14]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (10041): Inferred latch for "d1[15]" at ROM.sv(12) File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 12
+Info (12128): Elaborating entity "ROM_F2" for hierarchy "MEM:mem|ROM:romp|ROM_F2:RI1" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv Line: 8
+Warning (10858): Verilog HDL warning at ROM_F2.sv(10): object rom used but never assigned File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM_F2.sv Line: 10
+Info (12128): Elaborating entity "DMEM" for hierarchy "MEM:mem|DMEM:dmemp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 10
+Info (12128): Elaborating entity "MULTIPLEXER" for hierarchy "MEM:mem|MULTIPLEXER:muxp5" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 11
+Info (12128): Elaborating entity "REGMEM" for hierarchy "REGMEM:rmem" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 35
+Info (12128): Elaborating entity "WB" for hierarchy "WB:wbp" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 37
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "MEM:mem|Data4[31]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[30]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[29]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[28]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[27]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[26]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[25]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[24]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[23]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[22]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[21]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[20]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[19]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[18]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[17]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+    Warning (12110): Net "MEM:mem|Data4[16]" is missing source, defaulting to GND File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv Line: 7
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/output_files/PreyectoIXD.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 1
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv Line: 1
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Wed Jul 15 20:32:16 2020
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:50
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/output_files/PreyectoIXD.map.smsg.
+
+

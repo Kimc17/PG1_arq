@@ -1,0 +1,21 @@
+module REGEXE(logic input [31:0] ALUResult, Data2,
+					 logic input clk, reset, we, DataInputS,  
+					 logic output [31:0] ALURESULT, DATA2,
+					 logic output CLK, RESET, WE, DATAINPUTS);
+always_ff @(posedge clk) begin
+if (reset) begin
+ALURESULT <= 32'b0;
+DATA2 <= 32'b0;
+WE <= 1'b0;
+DATAINPUTS <= 1'b0;
+
+
+end
+else begin
+ALURESULT <= ALUResult;
+DATA2 <= Data2;
+WE <= we;
+DATAINPUTS <= DataInputS;
+end
+end					 
+endmodule

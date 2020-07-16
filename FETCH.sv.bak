@@ -1,0 +1,9 @@
+module FETCH ();
+logic pc4, 
+REGPCD regpcdp();
+ADD adderp();
+ADD adderpc();
+MUX muxp();
+
+
+endmodule

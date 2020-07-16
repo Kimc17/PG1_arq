@@ -1,0 +1,13 @@
+module REGFETCH(logic input [31:0] Inst, PC4,
+					 logic input clk, reset,
+					 logic output [31:0] INSTRUCCION);
+always_ff @(posedge clk) begin
+if (reset) begin
+INSTRUCCION <= 32'b0;
+
+end
+else begin
+INSTRUCCION <= Inst;
+end
+end					 
+endmodule

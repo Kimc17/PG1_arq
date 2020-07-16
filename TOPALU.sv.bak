@@ -1,0 +1,13 @@
+module TOPALU (logic input [31:0] Opa, Opb,
+					logic input [2:0] ALUSignal,
+					logic output [31:0] ALUResult);
+logic [31:0] ADDresult, MULresult, SUBresult, LSRresult, ANDresult;
+					
+ADD ADDp (Opa, Opb,ADDresult);
+MUL MULp (Opa, Opb,MULresult);
+LSR LSRp (Opa, Opb,LSRresult);
+AND ANDp (Opa, Opb,ANDresult);
+SUB SUBp (Opa, Opb,SUBresult);
+MUX MUXp (ADDresult, SUBresult, MULresult, LSRresult, ANDresult, ALUSignal, result);
+					
+endmodule

@@ -1,0 +1,6 @@
+module COMPARATOR(logic input [31:0] Data1, Data2,
+				logic output [31:0] CmpResult);
+				
+				
+assign result = Opa+Opb;				
+endmodule

@@ -1,0 +1,1047 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vADD
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1594878053
+!i10b 1
+!s100 cJ`g<Igmc`m_kk@0N7O:L2
+INjmb6Xjb0lFQ1ETaR0YKT3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ADD_sv_unit
+S1
+Z3 dC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2
+w1594676266
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1594878053.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+n@a@d@d
+vAND
+R0
+!s110 1594854171
+!i10b 1
+!s100 9_DbgNbhd_eckEEUe:2@_3
+IMziFaUzahfC>g5I:^V2FZ0
+R2
+!s105 AND_sv_unit
+S1
+R3
+w1594676771
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1594854171.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND.sv|
+!i113 1
+R6
+R7
+n@a@n@d
+vAND2
+R0
+Z8 !s110 1594878059
+!i10b 1
+!s100 <]B@GIXGnnUS2hz2][]Ln3
+IPQYR1H^cFaH=of[@`S9Ol1
+R2
+!s105 AND2_sv_unit
+S1
+R3
+w1594852017
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z9 !s108 1594878059.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv|
+!i113 1
+R6
+R7
+n@a@n@d2
+vCOMPARATOR
+R0
+R1
+!i10b 1
+!s100 ]5al`P>N3O]kXKaR0TTlZ2
+I?;C`bAWb^dYPbfcP47zKZ2
+R2
+!s105 COMPARATOR_sv_unit
+S1
+R3
+w1594819052
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv|
+!i113 1
+R6
+R7
+n@c@o@m@p@a@r@a@t@o@r
+vDECO
+R0
+R1
+!i10b 1
+!s100 <5;^;WYfAmB=dF1a1FA2l0
+IgddLkM;Y[<UMRh_k]dKD;0
+R2
+!s105 DECO_sv_unit
+S1
+R3
+w1594846087
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv|
+!i113 1
+R6
+R7
+n@d@e@c@o
+vDECODER
+R0
+Z10 !s110 1594878054
+!i10b 1
+!s100 X3JoLgJ:XIBP:UhVddJjF2
+IGU^QD4`S:S5zWZYFcj8f82
+R2
+!s105 DECODER_sv_unit
+S1
+R3
+w1594866575
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv|
+!i113 1
+R6
+R7
+n@d@e@c@o@d@e@r
+vDMEM
+R0
+R10
+!i10b 1
+!s100 d[XOWb4dk8AUz:X]a[j7a2
+IU<nJ]PhP<jzVgDMO4Ijd]3
+R2
+!s105 DMEM_sv_unit
+S1
+R3
+w1594746518
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z11 !s108 1594878054.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv|
+!i113 1
+R6
+R7
+n@d@m@e@m
+vEXE
+R0
+R10
+!i10b 1
+!s100 LG5d:A2530Y<RH14jiR?S0
+ImYHIH][d@hVVCJjdk1C0K0
+R2
+!s105 EXE_sv_unit
+S1
+R3
+w1594852210
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/EXE.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/EXE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/EXE.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/EXE.sv|
+!i113 1
+R6
+R7
+n@e@x@e
+vFETCH
+R0
+R10
+!i10b 1
+!s100 Uz<;z5Wb94QmlLj`WZI5^3
+IJ[L??Go2l6cDG9fQ4cK_K1
+R2
+!s105 FETCH_sv_unit
+S1
+R3
+w1594837651
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv|
+!i113 1
+R6
+R7
+n@f@e@t@c@h
+vIMEM
+R0
+R10
+!i10b 1
+!s100 L;?H@_1jjYJ9a8[]XW4>k2
+I5jI@XCa@12<^7nC8KiB2k2
+R2
+!s105 IMEM_sv_unit
+S1
+R3
+w1594833513
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/IMEM.sv|
+!i113 1
+R6
+R7
+n@i@m@e@m
+vLSR
+R0
+R10
+!i10b 1
+!s100 NNK9[TQQf[6WB^@:im2=g1
+IkEGcQDiia^;aA8K^J3QJI3
+R2
+!s105 LSR_sv_unit
+S1
+R3
+w1594858548
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/LSR.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/LSR.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/LSR.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/LSR.sv|
+!i113 1
+R6
+R7
+n@l@s@r
+vMEM
+R0
+Z12 !s110 1594878055
+!i10b 1
+!s100 S;D4_iPM8`G2_EQTSBegK3
+IT2RcFLPWRA8L_V^AN7Z0[1
+R2
+!s105 MEM_sv_unit
+S1
+R3
+w1594867311
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z13 !s108 1594878055.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv|
+!i113 1
+R6
+R7
+n@m@e@m
+vMUL
+R0
+R12
+!i10b 1
+!s100 hQ:?^04ez73>zD?Um`bC=2
+IETT>T3G1IOjKU40ceA4M10
+R2
+!s105 MUL_sv_unit
+S1
+R3
+w1594696444
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv|
+!i113 1
+R6
+R7
+n@m@u@l
+vMULTIPLEXER
+R0
+R12
+!i10b 1
+!s100 JNF^gWl3G[ANVzGGd]Q]>3
+IgECJPP?B7B7fjRkT;gNT]2
+R2
+!s105 MULTIPLEXER_sv_unit
+S1
+R3
+w1594821843
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv|
+!i113 1
+R6
+R7
+n@m@u@l@t@i@p@l@e@x@e@r
+vMUXALU
+R0
+R12
+!i10b 1
+!s100 1WU0_?=Bz2QWkSKk1Z9:j2
+IE_ggfGC3zd`0f2DbJ4GT80
+R2
+!s105 MUXALU_sv_unit
+S1
+R3
+w1594676979
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv|
+!i113 1
+R6
+R7
+n@m@u@x@a@l@u
+vREGDECO
+R0
+R12
+!i10b 1
+!s100 Vio=3Y3G:7QQ=PW[<@DJ[3
+IA6Xn?Fjg?C[OFR02QnNaQ2
+R2
+!s105 REGDECO_sv_unit
+S1
+R3
+w1594841038
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv|
+!i113 1
+R6
+R7
+n@r@e@g@d@e@c@o
+vREGEXE
+R0
+Z14 !s110 1594878056
+!i10b 1
+!s100 :o:TP[D60WQeWm_=Pz`=d0
+ISXRUBJVJ15m>9=LJzM7`Z2
+R2
+!s105 REGEXE_sv_unit
+S1
+R3
+w1594841078
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGEXE.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGEXE.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGEXE.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGEXE.sv|
+!i113 1
+R6
+R7
+n@r@e@g@e@x@e
+vREGFETCH
+R0
+R14
+!i10b 1
+!s100 mBzhPXKh[=d@YDfVmKLlk2
+I;NN8<4aO_hQ[M@gM<G6@51
+R2
+!s105 REGFETCH_sv_unit
+S1
+R3
+w1594677405
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z15 !s108 1594878056.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv|
+!i113 1
+R6
+R7
+n@r@e@g@f@e@t@c@h
+vREGMEM
+R0
+R14
+!i10b 1
+!s100 YBN^]@LaAgFjiUmZLGzM=1
+I;n^IQMGl0N?:1`9e`ceNc3
+R2
+!s105 REGMEM_sv_unit
+S1
+R3
+w1594844910
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv|
+!i113 1
+R6
+R7
+n@r@e@g@m@e@m
+vREGMEMORY
+R0
+R14
+!i10b 1
+!s100 RgQ3?6NU_S5QC8?o@B;0R2
+IHzcj5;XVBh2dCFINAjik?3
+R2
+!s105 REGMEMORY_sv_unit
+S1
+R3
+w1594864181
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv|
+!i113 1
+R6
+R7
+n@r@e@g@m@e@m@o@r@y
+vREGPCD
+R0
+R14
+!i10b 1
+!s100 g>`bh>G?WzFAPQ?SoYg0l0
+IW23hfDm`fc3>8IKbenNd50
+R2
+!s105 REGPCD_sv_unit
+S1
+R3
+w1594825757
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv|
+!i113 1
+R6
+R7
+n@r@e@g@p@c@d
+vROM
+R0
+R14
+!i10b 1
+!s100 gO]C5PPKM:?[<2YRB=2U:2
+I?^TmUn4]aGF:eGBBN<K1Y2
+R2
+!s105 ROM_sv_unit
+S1
+R3
+w1594827347
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv|
+!i113 1
+R6
+R7
+n@r@o@m
+vROM_F2
+R0
+Z16 !s110 1594878058
+!i10b 1
+!s100 7gLF8Ic@LhiXIh]<IBYLd3
+I=7mbUTY<HkFT5J]OIFfPO1
+R2
+!s105 ROM_F2_sv_unit
+S1
+R3
+w1594826827
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM_F2.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM_F2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z17 !s108 1594878058.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM_F2.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM_F2.sv|
+!i113 1
+R6
+R7
+n@r@o@m_@f2
+vRomImage
+Z18 !s110 1594878057
+!i10b 1
+!s100 WP]H2ZemE^mhM0`a6zCBR0
+Ii4AT^2<45MkN]Y7TJ>B3U1
+R2
+R3
+w1594783546
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage_bb.v
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage_bb.v
+L0 34
+R4
+r1
+!s85 0
+31
+Z19 !s108 1594878057.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage_bb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage_bb.v|
+!i113 1
+o-work work
+R7
+n@rom@image
+vSHL
+R0
+R18
+!i10b 1
+!s100 aYR=Y3<Zzz3>PdoSa>2Y20
+I5XH6GAZRCR=HmhiCTf=N70
+R2
+!s105 SHL_sv_unit
+S1
+R3
+w1594678143
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv|
+!i113 1
+R6
+R7
+n@s@h@l
+vSIGNEXTEND
+R0
+R18
+!i10b 1
+!s100 2fmA8P6KhTj:baVTGch=<1
+Imbk1BMe?H]X9ILb_EP`6S0
+R2
+!s105 SIGNEXTEND_sv_unit
+S1
+R3
+w1594844502
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SIGNEXTEND.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SIGNEXTEND.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SIGNEXTEND.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SIGNEXTEND.sv|
+!i113 1
+R6
+R7
+n@s@i@g@n@e@x@t@e@n@d
+vSUB
+R0
+R18
+!i10b 1
+!s100 zLCZXeAN=Y^MUSfXo6CVH3
+IRHSi[UiBNA?E@9[[];K=Z1
+R2
+!s105 SUB_sv_unit
+S1
+R3
+w1594676298
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SUB.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SUB.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SUB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SUB.sv|
+!i113 1
+R6
+R7
+n@s@u@b
+vtb_alu
+R0
+R8
+!i10b 1
+!s100 DUc@ThODQLYeDnH6QhNBY3
+IKeZAC<3X8dN8K1:Ha^TE40
+R2
+!s105 tb_alu_sv_unit
+S1
+R3
+w1594858075
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_alu.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_alu.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_alu.sv|
+!i113 1
+R6
+R7
+vtb_control
+R0
+!s110 1594878092
+!i10b 1
+!s100 >>LkkD?YU]4j4I`Dl6`fe1
+Ibm_>=5meM4;h`kZ202dYQ0
+R2
+!s105 tb_control_sv_unit
+S1
+R3
+w1594878077
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_control.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_control.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1594878092.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_control.sv|
+!i113 1
+R6
+R7
+vtb_deco
+R0
+R8
+!i10b 1
+!s100 oFjonVPRMIS3T`C]__X>]1
+I9XiEH@]0gVmKdZD;:;6iK2
+R2
+!s105 tb_deco_sv_unit
+S1
+R3
+w1594863513
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv|
+!i113 1
+R6
+R7
+vtb_exe
+R0
+Z20 !s110 1594878060
+!i10b 1
+!s100 ;nN^XDlb]A`f2ADVCg;6@2
+Im`VHOXPSRFFlf=ZW?:kF92
+R2
+!s105 tb_exe_sv_unit
+S1
+R3
+w1594865900
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv|
+!i113 1
+R6
+R7
+vtb_fetch
+R0
+R8
+!i10b 1
+!s100 nQFDKEm:A0ZFmJJ1g:kk03
+IC>2Kk>H99UWWnNgLI>dld0
+R2
+!s105 tb_fetch_sv_unit
+S1
+R3
+w1594861874
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_fetch.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_fetch.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_fetch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_fetch.sv|
+!i113 1
+R6
+R7
+vtb_imem
+R0
+R18
+!i10b 1
+!s100 4f5>=47j36PRbHOd]Lzof2
+I7`=[T0fY=EgPhbY]PJ:Uz0
+R2
+!s105 tb_imem_sv_unit
+S1
+R3
+w1594754161
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv|
+!i113 1
+R6
+R7
+vtb_mem
+R0
+R20
+!i10b 1
+!s100 cj=M2NzT664l<HA^ImHn]3
+IYiH@9e`90ZUl?77N^F:0>1
+R2
+!s105 tb_mem_sv_unit
+S1
+R3
+w1594866460
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv
+L0 2
+R4
+r1
+!s85 0
+31
+Z21 !s108 1594878060.000000
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv|
+!i113 1
+R6
+R7
+vtb_regmemory
+R0
+R8
+!i10b 1
+!s100 >8iF5mGUPYJ;9ZzfFK@zJ0
+I5P5KBKX=mQC@gb8UiiGI>2
+R2
+!s105 tb_regmemory_sv_unit
+S1
+R3
+w1594849859
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_regmemory.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_regmemory.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_regmemory.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_regmemory.sv|
+!i113 1
+R6
+R7
+vtb_ROMSimulation
+R0
+R16
+!i10b 1
+!s100 5:5omzYmmXMN^ZX=J1F:D0
+I?_OkjJm@298LeKJ_e9DzJ3
+R2
+!s105 tb_RomImage_sv_unit
+S1
+R3
+w1594782258
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv|
+!i113 1
+R6
+R7
+ntb_@r@o@m@simulation
+vtb_wb
+R0
+R20
+!i10b 1
+!s100 =AK6D>_XOGWFRz_dKZ@NV1
+I`Mcgd2j>cIlVXE94A<Nb<2
+R2
+!s105 tb_wb_sv_unit
+S1
+R3
+w1594877420
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_wb.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_wb.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_wb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_wb.sv|
+!i113 1
+R6
+R7
+vtestbench
+R0
+R16
+!i10b 1
+!s100 >XVBi<G@?h[FinYmUcnMK0
+IL<8Y1S[5l8Ok3HoDN[PPD2
+R2
+!s105 testbench_sv_unit
+S1
+R3
+w1594836508
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/testbench.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/testbench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/testbench.sv|
+!i113 1
+R6
+R7
+vTOP
+R0
+R16
+!i10b 1
+!s100 cc<5=flD]bn?>Km_EG:0C1
+I@L8=D5J7e;dTB2ITkUSzM0
+R2
+!s105 TOP_sv_unit
+S1
+R3
+w1594850690
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv|
+!i113 1
+R6
+R7
+n@t@o@p
+vTOPALU
+R0
+R16
+!i10b 1
+!s100 Cn^mfd`i6ig;=YH;?D:Z60
+IiMn08<fLEkS5Gfzk?Dz6a0
+R2
+!s105 TOPALU_sv_unit
+S1
+R3
+w1594856029
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv|
+!i113 1
+R6
+R7
+n@t@o@p@a@l@u
+vUNIDAD_CONTROL
+R0
+R16
+!i10b 1
+!s100 cb;?;ROS5P:SCC@<T4ff`2
+II4:ka_o@?UF1Y9z@?Y;D71
+R2
+!s105 UNIDAD_CONTROL_sv_unit
+S1
+R3
+w1594834317
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv|
+!i113 1
+R6
+R7
+n@u@n@i@d@a@d_@c@o@n@t@r@o@l
+vWB
+R0
+R16
+!i10b 1
+!s100 f>e5@<mJU91EQ1RmH6FFK2
+IQKo;[4L4A:KCP6EAWNj?D1
+R2
+!s105 WB_sv_unit
+S1
+R3
+w1594869499
+8C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/WB.sv
+FC:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/WB.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/WB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/WB.sv|
+!i113 1
+R6
+R7
+n@w@b

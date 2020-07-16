@@ -1,0 +1,23 @@
+module ROM_F(		  input logic clk, enable, 
+						  input logic [19:0] addr1,
+                    output logic [159:0] data);
+
+parameter file = "image.txt";
+
+
+reg [7:0] rom [307199:0];
+
+always @(posedge clk) begin
+  if(enable) begin
+  data[159:144] <= {rom[addr1], rom[addr1+1]};
+  data[144:128] <= {rom[addr1+2], rom[addr1+3]};
+  data[127:112] <= {rom[addr1+4], rom[addr1+5]};
+  data[111: 96]<= {rom[addr1+6], rom[addr1+7]};
+  data[95:80] <= {rom[addr1+8], rom[addr1+9]};
+  data[79:64] <= {rom[addr1+10], rom[addr1+11]};
+  data[63:48] <= {rom[addr1+12], rom[addr1+13]};
+  data[47:32] <= {rom[addr1+14], rom[addr1+15]};
+  data[31:16] <= {rom[addr1+16], rom[addr1+17]};
+  data[15:0] <={rom[addr1+18], rom[addr1+19]};
+end
+end

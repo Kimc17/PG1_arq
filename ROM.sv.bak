@@ -1,0 +1,18 @@
+module ROM(			  input logic clk_s, 
+					     input logic [17:0] address_s,
+                    output logic [31:0] d1);
+
+parameter file = "image.txt";
+logic [7:0] q_s1, q_s2;
+
+
+reg [8:0] q [19:0] ='{default:16'd0};
+
+RomImage RI1 (.address(address_s), .clock(clk_s), .q(q_s1);
+RomImage RI2 (.address(address_s+1'd1), .clock(clk_s), .q(q_s2);
+
+
+assign d1= {q[0], q[1]};
+
+
+endmodule

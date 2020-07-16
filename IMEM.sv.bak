@@ -1,0 +1,10 @@
+module IMEM(input logic [31:0] a,
+				output logic [31:0] rd);
+				logic [31:0] ram[63:0];
+initial
+$readmemh("compilado.data",ram);
+assign rd = ram[a[31:2]]; 
+
+endmodule
+
+

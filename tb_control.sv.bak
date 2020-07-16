@@ -1,0 +1,32 @@
+`timescale 1 ps/ 1 ps
+module tb_control();
+
+						
+logic DataInputS, clk;
+logic [31:0] Data5, ALUResult;
+logic [31:0] DataInput;
+
+WB wbp(DataInputS,Data5, ALUResult,DataInput);
+
+						
+initial begin 
+	clk =0;
+	DataInputS = 1'd0;
+	Data5 = 32'd3;
+	ALUResult = 32'd5;
+	#5; 
+	clk =0;
+	DataInputS = 1'd1;
+	Data5 = 32'd3;
+	ALUResult = 32'd5;
+	#5; 
+	clk =0;
+	DataInputS = 1'd0;
+	Data5 = 32'd0;
+	ALUResult = 32'd0;
+
+end
+always 
+	#5 clk <= !clk;
+
+endmodule

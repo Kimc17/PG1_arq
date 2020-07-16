@@ -1,0 +1,5 @@
+module SIGNEXTEND (input logic [17:0] Imm,
+					 output logic [31:0] IMMEXTEND);
+					 
+assign  IMMEXTEND ={{16{a[15]}}, a};
+endmodule

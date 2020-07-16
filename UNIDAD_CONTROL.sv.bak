@@ -1,0 +1,5 @@
+module UNIDAD_CONTROL(logic input [4:0] OPCODe,
+							 logic input [2:0] ALUOP
+							 logic output WE,DataInputS,DataInputON, OpbSelect, RWrite, Branch
+							 logic output [2:0] ALUSignal,
+							 );

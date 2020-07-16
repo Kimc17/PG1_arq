@@ -1,0 +1,52 @@
+`timescale 1ps/1ps
+
+module tb_ROMSimulation();
+reg clock;
+reg [17:0] address;
+wire [7:0] q;
+
+RomImage romp(address, clock, q );
+
+always begin 
+clock <=0;
+#10;
+clock <=1;
+#10;
+end
+
+
+initial begin 
+@(posedge clock);
+#5 address <=0;
+@(posedge clock);
+#5 address <=0;
+@(posedge clock);
+#5 address <=1;
+@(posedge clock);
+#5 address <=1;
+@(posedge clock);
+#5 address <=2;
+@(posedge clock);
+#5 address <=2;
+@(posedge clock);
+#5 address <=3;
+@(posedge clock);
+#5 address <=3;
+@(posedge clock);
+#5 address <=4;
+@(posedge clock);
+#5 address <=4;
+@(posedge clock);
+#5 address <=5;
+@(posedge clock);
+#5 address <=5;
+@(posedge clock);
+#5 address <=2;
+@(posedge clock);
+#5 address <=2;
+@(posedge clock);
+#5 address <=6;
+@(posedge clock);
+#5 address <=6;
+end
+endmodule

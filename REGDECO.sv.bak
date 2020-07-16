@@ -1,0 +1,13 @@
+module REGDECO(logic input [31:0] Data1, Data2, ImmExtend, 
+					 logic input clk, reset, WE, DataInputS, ALUSignal, OpbSelect,  
+					 logic output [31:0] INSTRUCCION);
+always_ff @(posedge clk) begin
+if (reset) begin
+INSTRUCCION <= 32'b0;
+
+end
+else begin
+INSTRUCCION <= Inst;
+end
+end					 
+endmodule

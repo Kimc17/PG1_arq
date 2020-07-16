@@ -1,0 +1,12 @@
+module DECO (input logic [3:0] Ra, Rb, Rd,
+				 input logic [17: 0] Imm,
+				 input logic [31:0] DataInput,
+				 output logic [31:0] BranchDir, ImmExtend, Data1, Data2 );
+
+SIGNEXTEND (Imm, ImmExtend);
+SHL ();
+
+COMPARATOR ();
+AND        ();
+
+endmodule

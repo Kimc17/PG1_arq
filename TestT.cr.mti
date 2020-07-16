@@ -19,6 +19,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	WB
 
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module REGDECO
+
+Top level modules:
+	REGDECO
+
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage_bb.v {1 {vlog -work work -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage_bb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module RomImage
@@ -35,13 +42,6 @@ Top level modules:
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPC.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPC.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGDECO.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module REGDECO
-
-Top level modules:
-	REGDECO
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ADD.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -71,19 +71,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	SUB
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TOP
-
-Top level modules:
-	TOP
-
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECO.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module DECO
 
 Top level modules:
 	DECO
+
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_rom.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_rom.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_rom
+
+Top level modules:
+	tb_rom
+
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOP.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TOP
+
+Top level modules:
+	TOP
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_regmemory.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_regmemory.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -92,19 +99,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	tb_regmemory
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TOPALU
+-- Compiling module UNIDAD_CONTROL
 
 Top level modules:
-	TOPALU
-
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_imem
-
-Top level modules:
-	tb_imem
+	UNIDAD_CONTROL
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -113,19 +113,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	REGPCD
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_imem.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module UNIDAD_CONTROL
+-- Compiling module tb_imem
 
 Top level modules:
-	UNIDAD_CONTROL
+	tb_imem
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/TOPALU.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module MUL
+-- Compiling module TOPALU
 
 Top level modules:
-	MUL
+	TOPALU
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/ROM.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -134,12 +134,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ROM
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUL.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module REGMEMORY
+-- Compiling module MUL
 
 Top level modules:
-	REGMEMORY
+	MUL
+
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_wb.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_wb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_wb
+
+Top level modules:
+	tb_wb
+
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_control.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_control.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_control
+
+Top level modules:
+	tb_control
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_fetch.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_fetch.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -148,26 +162,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	tb_fetch
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEMORY.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_deco
+-- Compiling module REGMEMORY
 
 Top level modules:
-	tb_deco
-
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module REGFETCH
-
-Top level modules:
-	REGFETCH
-
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module COMPARATOR
-
-Top level modules:
-	COMPARATOR
+	REGMEMORY
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/testbench.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -176,19 +176,33 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	testbench
 
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/COMPARATOR.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module COMPARATOR
+
+Top level modules:
+	COMPARATOR
+
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGFETCH.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module REGFETCH
+
+Top level modules:
+	REGFETCH
+
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_deco.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_deco
+
+Top level modules:
+	tb_deco
+
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/FETCH.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module FETCH
 
 Top level modules:
 	FETCH
-
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module MULTIPLEXER
-
-Top level modules:
-	MULTIPLEXER
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DMEM.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -197,12 +211,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	DMEM
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MULTIPLEXER.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_mem
+-- Compiling module MULTIPLEXER
 
 Top level modules:
-	tb_mem
+	MULTIPLEXER
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MUXALU.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -211,12 +225,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	MUXALU
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_mem.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module AND2
+-- Compiling module tb_mem
 
 Top level modules:
-	AND2
+	tb_mem
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGMEM.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -232,19 +246,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ROM_F2
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/AND2.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module DECODER
+-- Compiling module AND2
 
 Top level modules:
-	DECODER
-
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_ROMSimulation
-
-Top level modules:
-	tb_ROMSimulation
+	AND2
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage.v {1 {vlog -work work -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/RomImage.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -253,6 +260,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	RomImage
 
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_RomImage.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_ROMSimulation
+
+Top level modules:
+	tb_ROMSimulation
+
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/DECODER.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DECODER
+
+Top level modules:
+	DECODER
+
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/MEM.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MEM
@@ -260,12 +281,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	MEM
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_exe
+-- Compiling module SHL
 
 Top level modules:
-	tb_exe
+	SHL
 
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_alu.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_alu.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -274,11 +295,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	tb_alu
 
-} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/SHL.sv
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/tb_exe.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module SHL
+-- Compiling module tb_exe
 
 Top level modules:
-	SHL
+	tb_exe
 
 } {} {}}

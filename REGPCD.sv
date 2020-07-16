@@ -1,4 +1,4 @@
-module REGPCD(input logic  [19:0] PCValue,
+module REGPCD(input logic  [31:0] PCValue,
 				 input logic clk, reset,
 				 output logic [31:0] PCVALUE);
 always_ff @(posedge clk) begin

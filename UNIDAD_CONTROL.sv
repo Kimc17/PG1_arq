@@ -7,18 +7,13 @@ logic [9:0] out;
 assign {WE,DataInputS,DataInputON, OpbSelect, RWrite, Branch,SelectMem, ALUSignal} = out;
 always @(*) begin 
 
-case ({OPCODE, ALUOP})
+case (OPCODE)
 
-8'b00000000 : out = 10'b0110100000; 
-8'b00000001 : out = 10'b0110100001; 
-8'b00000010 : out = 10'b0110100010; 
-8'b00000011 : out = 10'b0110100011;
-8'b00000100 : out = 10'b0110100100;
-8'b00001XXX : out = 10'b0011001XXX;
-8'b00010XXX : out = 10'b1101X00XXX;
-8'b00011XXX : out = 10'b0000010XXX;
-8'b00100xxx : out = 10'b0111100000;
-default:  out = 10'bxxxxxxxxxx;
+5'b00000: out = {7'b0110100, ALUOP}; //Tipo R
+5'b00001: out = 10'b0011001000;  	 //LDR 
+5'b00010 :out = 10'b1101x00000;      //STR
+5'b00100 :out = 10'b0111100000;      //ADDI
+5'b00011 :out = 10'b0110110000;      //BEQ
 
 endcase
 

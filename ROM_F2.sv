@@ -1,5 +1,5 @@
 module ROM_F2(		  input logic clk, enable, 
-						  input logic  [19:0] addr1,
+						  input logic  [18:0] addr1,
                     output logic [15:0] data);
 
 						  
@@ -7,7 +7,7 @@ module ROM_F2(		  input logic clk, enable,
 parameter file = "image.txt";
 
 
-reg [7:0] rom [307199:0];
+reg [7:0] rom [524287:0];
 
 always @(posedge clk) begin
   if(enable) begin

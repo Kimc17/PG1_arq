@@ -1,6 +1,6 @@
 module REGDECO(   input logic[31:0] Data1, Data2, ImmExtend, Inst,
 					 input logic [3:0] Rd,
-					 input logic  DataInputON, RWrite, clk, reset, we, DataInputS,
+					 input logic  DataInputON, RWrite, clk, reset, we, DataInputS, CmpResult, 
 					 input logic [2:0]ALUSignal,
 					 input logic OpbSelect, SelectMem,
 					 output logic DATAINPUTON,RWRITE,
@@ -9,6 +9,9 @@ module REGDECO(   input logic[31:0] Data1, Data2, ImmExtend, Inst,
 					 output logic  WE, DATAINPUTS, 
 					 output logic [2:0] ALUSIGNAL,
 					 output logic OPBSELECT, SELECTMEM);
+					 
+					 
+
 always_ff @(posedge clk) begin
 if (reset) begin
 DATA1 <= 32'b0;

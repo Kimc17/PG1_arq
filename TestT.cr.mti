@@ -99,6 +99,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	tb_regmemory
 
+} {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/UNIDAD_CONTROL.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module UNIDAD_CONTROL
+
+Top level modules:
+	UNIDAD_CONTROL
+
 } {} {}} C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv {1 {vlog -work work -sv -stats=none C:/Users/Franklin/Documents/IS2020/Arqui/ProyectoI2/REGPCD.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module REGPCD

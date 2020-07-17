@@ -1,5 +1,5 @@
 `timescale 1 ps/ 1 ps
-module tb_rom();
+module tb_memoria();
 
 reg clk, enable;
 reg [18:0] addr;

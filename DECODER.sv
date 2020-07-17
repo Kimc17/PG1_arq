@@ -3,9 +3,20 @@ module DECODER(input logic SelectMem,
 
 always @(*) begin 
 case (SelectMem)
-1'b0 : En1 = 1'b1;
-1'b1 : En2 = 1'b1 ;
-default : En1=1'bx;
+   0: begin  
+	En1<= 1;
+	En2<= 0;    
+   end
+   1: begin
+	En1<= 0;
+	En2<= 1;      
+   end
+   default: begin
+	En1<= 0;
+	En2<= 0; 
+	end
 endcase
-end		
-endmodule
+end	
+
+
+endmodule		

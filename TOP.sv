@@ -1,7 +1,7 @@
 module TOP(input logic clk, reset);
 logic [31:0] Inst, pc4, BranchDir, PC4, ImmExtend, Data1, Data2,
 DATA1, DATA2, IMMEXTEND, ALUResult, ALURESULT, DATA21, DATA5, ALURESULT2, DATA52, DataInput,
-Data52, InstDeco, InstExe, InstMem, InstWb, DirSalto;
+InstDeco, InstExe, InstMem, InstWb, DirSalto;
 
 logic WE,DataInputS, OpbSelect, RWrite, Branch, PCSelect,DataInputON,
  DATAINPUTON1, WE1, DATAINPUTS1, OPBSELECT, SELECTMEM1, SelectMem, 
@@ -9,7 +9,7 @@ logic WE,DataInputS, OpbSelect, RWrite, Branch, PCSelect,DataInputON,
  RWriteDeco, RWriteExe,RWriteMem, R2S, CmpResult;
  
 logic [2:0] ALUSignal, ALUSIGNAL ; 
-logic [3:0] RD, RdDeco, Rd, RdExe, RdMem;
+logic [3:0] Rd, RdExe, RdMem;
 
 FETCH fetch(PCSelect, clk, reset, pc4, BranchDir, Inst, PC4, DirSalto);
 				  

@@ -5,20 +5,19 @@ module tb_mem();
 
 logic SelectMem, WE, clk;
 logic [31:0] ALURESULT;
-logic [31:0] Data2;
+logic [31:0] Data2, Data5, Data3;
+logic [31:0] Data4;
+logic En1, En2;
 
-logic [31:0] Data5;
-
-
+		
 			
-			
-EXE exep(SelectMem, WE, clk,ALURESULT,Data2, Data5);
+MEM memp(SelectMem, WE, clk,ALURESULT,Data2, Data5);
 
 						
 initial begin 
 
 	clk =0;
-	SelectMem = 1'b1;
+	SelectMem = 1'b0;
 	WE = 1'b1;
 	ALURESULT = 32'd8;
 	Data2 = 32'd3;

@@ -1,6 +1,6 @@
 module REGDECO(   input logic[31:0] Data1, Data2, ImmExtend, Inst,
 					 input logic [3:0] Rd,
-					 input logic  DataInputON, RWrite, clk, reset, we, DataInputS, CmpResult, 
+					 input logic  DataInputON, RWrite, clk, reset, we, DataInputS, CmpResult, CmpResult2, 
 					 input logic [2:0]ALUSignal,
 					 input logic OpbSelect, SelectMem,
 					 output logic DATAINPUTON,RWRITE,

@@ -1,3 +1,28 @@
-ADD R0, R2, R3
-ADI R0,R1,#5
-STR R2,R4,#0
+ADI R1, R0, #2077   
+ADI R2, R0, #6497   
+ADI R3, R0, #204800 
+ADI R4, R0, #0      
+ADI R5, R0, #0     
+STR R6, R4, #0     
+ADI R7, R0, #1      
+ADI R8, R0, #2077   
+ADI R9, R0, #1     
+SUB R6, R6, R2
+BGT R6, R2, #-4
+AND RA, R8, R9     
+LSR R8, R8, R9
+BEQ RA, R9, #48
+ADI RB, R0, #2
+ADD R5, R5, RB
+MUL R6, R6, R6
+SUB R7, R7, R2 
+BGT R7, R2, #-4
+LDR R4, R7, #32
+ADI R4, R4, R9
+ADI R5, R0, #0
+BGT R1, R5, #16
+BGT R3, R4, #-56
+BEQ R0, R0, #12
+MUL R7, R7, R2
+BEQ R0, R0, #-28
+

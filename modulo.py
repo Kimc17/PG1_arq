@@ -1,38 +1,38 @@
-entrada = [3, 5, 6, 2, 8]  
-d =11  	  
-n = 14
+entrada = [32, 53, 61, 23, 82]  
+d = 11#2077 	  
+n = 14#6497
 
 tam = len(entrada)			
 salida = entrada[:]
 
 i = 0
-d_i= d
+
 ind = 0
 
-while (i < tam):		    
+while (tam>i):		    
         c = entrada[i]
         m=1
-        while (ind<d):
+        d_i= d
+        while (d>=ind):
             while (c>=n):
-                    c-=n 
+                    c=c-n 
             print(c)
             pos= d_i & 1
             d_i = d_i >> 1     
 
-
             if (pos ==1):
-                m *= c              #guarda en registro
-                
+                m =m* c              #guarda en registro  
             ind +=2
-            c*=c
-
+            c= c*c
         while (m>=n):
                 m-=n
         salida[i] = m
-        i += 1
+        i = i+ 1
         ind=0
-        d_i=d
+
         
     
 print("entrada =", entrada)
 print("salida=", salida)
+
+

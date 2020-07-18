@@ -6,7 +6,7 @@ InstDeco, InstExe, InstMem, InstWb, DirSalto;
 logic WE,DataInputS, OpbSelect, RWrite, Branch, PCSelect,DataInputON,
  DATAINPUTON1, WE1, DATAINPUTS1, OPBSELECT, SELECTMEM1, SelectMem, 
  DATAINPUTON2,WE2, DATAINPUTS2, SELECTMEM2, DATAINPUTS3, DATAINPUTON3,
- RWriteDeco, RWriteExe,RWriteMem, R2S, CmpResult;
+ RWriteDeco, RWriteExe,RWriteMem, R2S, CmpResult, CmpResult2;
  
 logic [2:0] ALUSignal, ALUSIGNAL ; 
 logic [3:0] Rd, RdExe, RdMem;
@@ -22,9 +22,9 @@ UNIDAD_CONTROL controlp( InstDeco[31:27], InstDeco[14:12], WE,DataInputS,
  
 
 DECO deco(InstDeco[22:19], InstDeco[18:15], Rd,InstDeco[26:23],Branch, clk, DATAINPUTON3,RWriteMem,R2S, InstDeco[18:0], DataInput, 
-PCSelect,CmpResult, BranchDir, ImmExtend, Data1, Data2 );	 
+PCSelect,CmpResult, CmpResult2, BranchDir, ImmExtend, Data1, Data2 );	 
  
-REGDECO rdeco(Data1, Data2, ImmExtend, InstDeco, InstDeco[26:23],  DataInputON,RWrite,clk, reset, WE, DataInputS, CmpResult, ALUSignal, OpbSelect, SelectMem,
+REGDECO rdeco(Data1, Data2, ImmExtend, InstDeco, InstDeco[26:23],  DataInputON,RWrite,clk, reset, WE, DataInputS, CmpResult, CmpResult2, ALUSignal, OpbSelect, SelectMem,
 DATAINPUTON1,RWriteDeco, DATA1, DATA2, IMMEXTEND,InstExe, RdExe, WE1, DATAINPUTS1, ALUSIGNAL, OPBSELECT, SELECTMEM1 );					 
 				 
 

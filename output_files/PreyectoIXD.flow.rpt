@@ -1,5 +1,5 @@
 Flow report for PreyectoIXD
-Fri Jul 17 23:50:29 2020
+Sat Jul 18 08:27:18 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Jul 17 23:50:29 2020       ;
+; Flow Status                     ; Successful - Sat Jul 18 08:27:18 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; PreyectoIXD                                 ;
 ; Top-level Entity Name           ; TOP                                         ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/17/2020 23:47:57 ;
+; Start date & time ; 07/18/2020 08:25:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PreyectoIXD         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 273549554866998.159505127712444        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 273549554866998.159508232608412        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,12 +96,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4796 MB             ; 00:00:46                           ;
-; Fitter               ; 00:01:14     ; 1.0                     ; 6232 MB             ; 00:01:19                           ;
+; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 4797 MB             ; 00:00:40                           ;
+; Fitter               ; 00:00:52     ; 1.0                     ; 6213 MB             ; 00:01:11                           ;
 ; Assembler            ; 00:00:17     ; 1.0                     ; 4833 MB             ; 00:00:10                           ;
-; Timing Analyzer      ; 00:00:15     ; 1.0                     ; 5091 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4719 MB             ; 00:00:02                           ;
-; Total                ; 00:02:15     ; --                      ; --                  ; 00:02:23                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 5082 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4719 MB             ; 00:00:02                           ;
+; Total                ; 00:01:45     ; --                      ; --                  ; 00:02:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

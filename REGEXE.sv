@@ -8,7 +8,7 @@ always_ff @(posedge clk) begin
 if (reset) begin
 ALURESULT <= 32'b0;
 DATA2 <= 32'b0;
-DATAINPUTON <=32'b0;
+DATAINPUTON <=1'b0;
 WE <= 1'b0;
 DATAINPUTS <= 1'b0;
 SELECTMEM  <= 1'b0;

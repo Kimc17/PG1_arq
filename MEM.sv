@@ -10,7 +10,7 @@ logic [31:0] Data4,Data3;
 
 
 DECODER decp (SelectMem, En1, En2);		  
-ROM_F2 romp(clk, En1, ALURESULT[18:0], Data4);
+//ROM_F2 romp(clk, En1, ALURESULT[18:0], Data4);    //problema al compilar
 DMEM dmemp (clk, WE, En2, ALURESULT, Data2, Data3);
 MULTIPLEXER  muxp5 (Data4,Data3, SelectMem, Data5);
 

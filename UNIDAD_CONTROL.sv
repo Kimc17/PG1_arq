@@ -3,7 +3,7 @@ module UNIDAD_CONTROL( input logic[4:0] OPCODE,
 							  output logic WE,DataInputS,DataInputON, OpbSelect, RWrite, Branch, SelectMem,R2S,						 
 							  output logic [2:0] ALUSignal
 							 );
-logic [9:0] out;							 
+logic [10:0] out;							 
 assign {WE,DataInputS,DataInputON, OpbSelect, RWrite, Branch,SelectMem,R2S, ALUSignal} = out;
 always @(*) begin 
 
